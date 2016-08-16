@@ -15,6 +15,16 @@
 		26A323981D62C77A007B5DE6 /* WebP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A323971D62C77A007B5DE6 /* WebP.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		26A323BC1D62CF33007B5DE6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26A3236B1D62C455007B5DE6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26A323731D62C455007B5DE6;
+			remoteInfo = WebPOC;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		26A323741D62C456007B5DE6 /* WebPOC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WebPOC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		26A323771D62C456007B5DE6 /* WebPOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebPOC.h; sourceTree = "<group>"; };
@@ -140,6 +150,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				26A323BD1D62CF33007B5DE6 /* PBXTargetDependency */,
 			);
 			name = SwiftWebP;
 			productName = SwiftWebP;
@@ -216,6 +227,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26A323BD1D62CF33007B5DE6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26A323731D62C455007B5DE6 /* WebPOC */;
+			targetProxy = 26A323BC1D62CF33007B5DE6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		26A3237A1D62C456007B5DE6 /* Debug */ = {
@@ -410,6 +429,7 @@
 				26A3237E1D62C456007B5DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26A323931D62C763007B5DE6 /* Build configuration list for PBXNativeTarget "SwiftWebP" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +438,7 @@
 				26A323951D62C763007B5DE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

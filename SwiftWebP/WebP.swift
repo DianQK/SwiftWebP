@@ -23,7 +23,7 @@ extension NSObjectProtocol {
 }
 
 extension WebP where Image: NSData {
-    var image: UIImage? {
+    public var image: UIImage? {
         return UIImage.webp_imageWithData(self.image)
     }
 }
