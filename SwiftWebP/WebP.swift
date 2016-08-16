@@ -9,21 +9,21 @@
 import UIKit
 import WebPOC
 
-public struct WebP<Image> {
-    let image: Image
-    init(_ image: Image) {
-        self.image = image
+public struct WebP {
+    private let data: Data
+    init(_ data: Data) {
+        self.data = data
     }
-}
 
-extension NSObjectProtocol {
-    public var wp: WebP<Self> {
-        return WebP(self)
-    }
-}
-
-extension WebP where Image: NSData {
     public var image: UIImage? {
-        return UIImage.webp_imageWithData(self.image)
+        return UIImage.webp_image(with: data)
+    }
+
+    static public var praseImage: (Data) -> UIImage? = UIImage.webp_image
+}
+
+extension Data {
+    public var wp: WebP {
+        return WebP(self)
     }
 }
